@@ -1,0 +1,16 @@
+{
+  "name": "salesmatetask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "author": "priyanka",
+  "license": "ISC",
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "cucumber": "^6.0.5",
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  }
+}
