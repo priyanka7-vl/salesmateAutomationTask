@@ -14,7 +14,7 @@ Given('I am on the salesmate login page',{timeout: 2 * 18000}, async function ()
 });
 
 When('I enter the valid credentials it should be logged in',{timeout: 2 * 18000}, async function () {
-    await common.login(inputs.Login.Email,inputs.Login.Password);
+    await common.login(inputs.changePassword.email,inputs.changePassword.password);
 });
 
 Then('Browser title should be matched with the page opened',{timeout: 2 * 20000}, async function () {
@@ -38,7 +38,7 @@ Then('Change password page should be opened',{timeout: 2 * 18000},async function
 })
 //4
 When('I enter valid old,new and re-type password and click on update button',{timeout: 2 * 18000},async function (){
-    await common.changePassword(inputs.Login.Password,inputs.Login.NewPassword);
+    await common.changePassword(inputs.changePassword.password,inputs.changePassword.newPassword);
 })
 Then('Salesmate login password changed and succesful message displayed on change password page',{timeout: 2 * 18000},async function () {
     await driver.sleep(1000)
@@ -55,7 +55,7 @@ Then('Salesmate login page should be opened',{timeout: 2 * 18000},async function
 })
 //6
 When('User enter valid email and old password',{timeout: 2 * 18000},async function() {
-    await common.login(inputs.Login.Email,inputs.Login.Password);
+    await common.login(inputs.changePassword.email,inputs.changePassword.password);
     await driver.sleep(2000)
 })
 Then('Invalid password message shoulb be displayed',{timeout: 2 * 18000},async function() {
@@ -67,7 +67,7 @@ Then('Invalid password message shoulb be displayed',{timeout: 2 * 18000},async f
 //7
 When('User enter valid email and new password',{timeout: 2 * 18000},async function() {
     await driver.navigate().refresh();
-    await common.login(inputs.Login.Email,inputs.Login.NewPassword);
+    await common.login(inputs.changePassword.email,inputs.changePassword.newPassword);
 })
 Then('Default Dashboard should be opened',{timeout: 2 * 18000},async function() {
     await common.checkDefaultDashboardTitle();

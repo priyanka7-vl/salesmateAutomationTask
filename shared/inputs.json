@@ -1,7 +1,7 @@
 {
-    "Login": {
-        "Email": "priyanka.vlr@rapidops.com",
-        "Password": "123456",
-        "NewPassword": "1234567"
+    "changePassword": {
+        "email": "priyanka.vlr@rapidops.com",
+        "password": "123456",
+        "newPassword": "1234567"
     }
 }
