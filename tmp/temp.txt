@@ -1,0 +1,35 @@
+1. Login to the Salesmate
+Expected Result:
+- The user should get logged into the Salesmate
+- The Salesmate dashboard page should get opened
+2. Click on the User Profile Picture> My Account
+Expected Result:
+- My account page should get opened
+3. Click on the Security> Change Password
+Expected Result:
+- The change password page should get opened
+4. Leave old, new and/or re-type password fields as a blank> Click on the Update button
+Expected Result:
+- The Salesmate login password should not get changed
+- The validation message should get displayed on the change password page
+
+5. Enter the invalid old password and valid new and re-type password> Click on the Update button
+Expected Result:
+- The Salesmate login password should not get changed
+- The validation message should get displayed on the change password page
+6. Enter a valid old password and enter new and re-type password same as old password> Click on the Update button
+Expected Result:
+- The Salesmate login password should not get changed
+- The validation message should get displayed on the change password page
+7. Enter a valid old and new password and enter different re-type password than new password> Click on the Update button
+Expected Result:
+- The Salesmate login password should not get changed
+- The validation message should get displayed on the change password page
+8. Click on the User Profile Picture> Sign Out
+Expected Result:
+- The user should get logged-out from the Salesmate
+- The Salesmate login page should get opened
+9. Do the Salesmate login with an old password
+Expected Result:
+- Still, the user should get logged into the Salesmate with an old password
+- The Salesmate dashboard page should get opened
